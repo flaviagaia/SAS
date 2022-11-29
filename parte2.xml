@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="UTF-8"?><_ROOT_ EMVERSION="14.3" ORIENTATION="HORIZONTAL">
+<Workspace>
+<NODES>
+<NODE CLASS="SASHELP.EMCORE.EXTENSION.CLASS" COMPONENT="FileImport" ID="FIMPORT" X="124" Y="222" DESCRIPTION="Enem" DIAGRAMID="_ROOT_" PARENTID="" TOOLTYPE="SAMPLE" TOOLPREFIX="FIMPORT">
+<PROPERTIES Location="CATALOG" Catalog="SASHELP.EMSAMP.Fimport.SOURCE" ImportType="Local" GuessRows="500" Delimiter="," NameRow="Y" SkipRows="0" MaxRows="1000000" MaxCols="10000" FileType="xlsx" Role="TRAIN" ForceRun="N" Summarize="N" AdvancedAdvisor="N" RunAction="Train" Component="FileImport" IFileName="C:\Users\FGGP\Downloads\2- Base de dados.xlsx" AccessTable="NoTableName" UserID="NoUserID" Password="NoPassword">
+<VariableProperties/>
+<EmVariableAttributes>
+<DELTA Variable="CO_MUNICIPIO_RESIDENCIA" AttributeName="ROLE" AttributeValue="REJECTED"/>
+<DELTA Variable="LATITUDE" AttributeName="ROLE" AttributeValue="REJECTED"/>
+<DELTA Variable="LONGITUDE" AttributeName="ROLE" AttributeValue="REJECTED"/>
+<DELTA Variable="NOTA_MEDIA" AttributeName="ROLE" AttributeValue="REJECTED"/>
+<DELTA Variable="NO_MUNICIPIO_RESIDENCIA" AttributeName="ROLE" AttributeValue="REJECTED"/>
+<DELTA Variable="NU_ANO" AttributeName="ROLE" AttributeValue="REJECTED"/>
+<DELTA Variable="NU_INSCRICAO" AttributeName="ROLE" AttributeValue="REJECTED"/>
+<DELTA Variable="NU_NOTA_MT" AttributeName="ROLE" AttributeValue="TARGET"/>
+<DELTA Variable="Regiao_Nome" AttributeName="ROLE" AttributeValue="REJECTED"/>
+<DELTA Variable="SG_UF_RESIDENCIA" AttributeName="ROLE" AttributeValue="REJECTED"/>
+<DELTA Variable="UF_Capital" AttributeName="ROLE" AttributeValue="REJECTED"/>
+<DELTA Variable="UF_Nome" AttributeName="ROLE" AttributeValue="REJECTED"/>
+</EmVariableAttributes>
+<EmTargetAttributes/>
+<EmFileProperties>
+<USERTRAINCODE Type="EXTERNAL" Extension="sas">
+<Data/>
+</USERTRAINCODE>
+<VARIABLESETDELTA Type="EXTERNAL" Extension="txt">
+<Data><![CDATA[
+if NAME=&quot;CO_MUNICIPIO_RESIDENCIA&quot; then do;
+ROLE=&quot;REJECTED&quot;;
+LEVEL=&quot;INTERVAL&quot;;
+ORDER=&quot;&quot;;
+DROP=&quot;N&quot;;
+end;
+if NAME=&quot;LATITUDE&quot; then do;
+ROLE=&quot;REJECTED&quot;;
+LEVEL=&quot;INTERVAL&quot;;
+ORDER=&quot;&quot;;
+DROP=&quot;N&quot;;
+end;
+if NAME=&quot;LONGITUDE&quot; then do;
+ROLE=&quot;REJECTED&quot;;
+LEVEL=&quot;INTERVAL&quot;;
+ORDER=&quot;&quot;;
+DROP=&quot;N&quot;;
+end;
+if NAME=&quot;NOTA_MEDIA&quot; then do;
+ROLE=&quot;REJECTED&quot;;
+LEVEL=&quot;INTERVAL&quot;;
+ORDER=&quot;&quot;;
+DROP=&quot;N&quot;;
+end;
+if NAME=&quot;NO_MUNICIPIO_RESIDENCIA&quot; then do;
+ROLE=&quot;REJECTED&quot;;
+LEVEL=&quot;NOMINAL&quot;;
+ORDER=&quot;&quot;;
+DROP=&quot;N&quot;;
+end;
+if NAME=&quot;NU_ANO&quot; then do;
+ROLE=&quot;REJECTED&quot;;
+LEVEL=&quot;INTERVAL&quot;;
+ORDER=&quot;&quot;;
+DROP=&quot;N&quot;;
+end;
+if NAME=&quot;NU_INSCRICAO&quot; then do;
+ROLE=&quot;REJECTED&quot;;
+LEVEL=&quot;INTERVAL&quot;;
+ORDER=&quot;&quot;;
+DROP=&quot;N&quot;;
+end;
+if NAME=&quot;NU_NOTA_MT&quot; then do;
+ROLE=&quot;TARGET&quot;;
+LEVEL=&quot;INTERVAL&quot;;
+ORDER=&quot;&quot;;
+DROP=&quot;N&quot;;
+end;
+if NAME=&quot;Regiao_Nome&quot; then do;
+ROLE=&quot;REJECTED&quot;;
+LEVEL=&quot;NOMINAL&quot;;
+ORDER=&quot;&quot;;
+DROP=&quot;N&quot;;
+end;
+if NAME=&quot;SG_UF_RESIDENCIA&quot; then do;
+ROLE=&quot;REJECTED&quot;;
+LEVEL=&quot;NOMINAL&quot;;
+ORDER=&quot;&quot;;
+DROP=&quot;N&quot;;
+end;
+if NAME=&quot;UF_Capital&quot; then do;
+ROLE=&quot;REJECTED&quot;;
+LEVEL=&quot;NOMINAL&quot;;
+ORDER=&quot;&quot;;
+DROP=&quot;N&quot;;
+end;
+if NAME=&quot;UF_Nome&quot; then do;
+ROLE=&quot;REJECTED&quot;;
+LEVEL=&quot;NOMINAL&quot;;
+ORDER=&quot;&quot;;
+DROP=&quot;N&quot;;
+end;
+]]>
+</Data>
+</VARIABLESETDELTA>
+<DELTACODE Type="EXTERNAL" Extension="txt">
+<Data><![CDATA[
+if NAME=&quot;CO_MUNICIPIO_RESIDENCIA&quot; then do;
+ROLE=&quot;REJECTED&quot;;
+LEVEL=&quot;INTERVAL&quot;;
+ORDER=&quot;&quot;;
+end;
+if NAME=&quot;LATITUDE&quot; then do;
+ROLE=&quot;REJECTED&quot;;
+LEVEL=&quot;INTERVAL&quot;;
+ORDER=&quot;&quot;;
+end;
+if NAME=&quot;LONGITUDE&quot; then do;
+ROLE=&quot;REJECTED&quot;;
+LEVEL=&quot;INTERVAL&quot;;
+ORDER=&quot;&quot;;
+end;
+if NAME=&quot;NOTA_MEDIA&quot; then do;
+ROLE=&quot;REJECTED&quot;;
+LEVEL=&quot;INTERVAL&quot;;
+ORDER=&quot;&quot;;
+end;
+if NAME=&quot;NO_MUNICIPIO_RESIDENCIA&quot; then do;
+ROLE=&quot;REJECTED&quot;;
+LEVEL=&quot;NOMINAL&quot;;
+ORDER=&quot;&quot;;
+end;
+if NAME=&quot;NU_ANO&quot; then do;
+ROLE=&quot;REJECTED&quot;;
+LEVEL=&quot;INTERVAL&quot;;
+ORDER=&quot;&quot;;
+end;
+if NAME=&quot;NU_INSCRICAO&quot; then do;
+ROLE=&quot;REJECTED&quot;;
+LEVEL=&quot;INTERVAL&quot;;
+ORDER=&quot;&quot;;
+end;
+if NAME=&quot;NU_NOTA_MT&quot; then do;
+ROLE=&quot;TARGET&quot;;
+LEVEL=&quot;INTERVAL&quot;;
+ORDER=&quot;&quot;;
+end;
+if NAME=&quot;Regiao_Nome&quot; then do;
+ROLE=&quot;REJECTED&quot;;
+LEVEL=&quot;NOMINAL&quot;;
+ORDER=&quot;&quot;;
+end;
+if NAME=&quot;SG_UF_RESIDENCIA&quot; then do;
+ROLE=&quot;REJECTED&quot;;
+LEVEL=&quot;NOMINAL&quot;;
+ORDER=&quot;&quot;;
+end;
+if NAME=&quot;UF_Capital&quot; then do;
+ROLE=&quot;REJECTED&quot;;
+LEVEL=&quot;NOMINAL&quot;;
+ORDER=&quot;&quot;;
+end;
+if NAME=&quot;UF_Nome&quot; then do;
+ROLE=&quot;REJECTED&quot;;
+LEVEL=&quot;NOMINAL&quot;;
+ORDER=&quot;&quot;;
+end;
+drop DROP;
+]]>
+</Data>
+</DELTACODE>
+<EMNOTES Type="EXTERNAL" Extension="txt">
+<Data/>
+</EMNOTES>
+</EmFileProperties>
+</PROPERTIES>
+</NODE>
+<NODE CLASS="SASHELP.EMMDFY.EMIMPUTE.CLASS" COMPONENT="Impute" ID="Impt" X="334" Y="336" DESCRIPTION="Correção dos nulos" DIAGRAMID="_ROOT_" PARENTID="" TOOLTYPE="MODIFY" TOOLPREFIX="Impt">
+<PROPERTIES MethodInterval="MEAN" MethodClass="COUNT" MethodTargetInterval="NONE" MethodTargetClass="NONE" ABWTuning="9" AHUBERTuning="1.5" AWAVETuning="6.2831853072" SpacingProportion="90" DefaultChar="" DefaultNum="." RandomSeed="12345" Normalize="Y" ImputeNoMissing="N" MaxPctMissing="50" ValidateTestMissing="N" DistributionMissing="N" LeafSize="5" Maxbranch="2" Maxdepth="6" MinCatSize="5" Nrules="5" Nsurrs="2" Splitsize="." Indicator="NONE" IndicatorRole="REJECTED" ReplaceVariable="N" HideVariable="Y" IndicatorSource="IMPUTED" ForceRun="N" RunAction="Train" Component="Impute">
+<VariableProperties/>
+<EmVariableAttributes>
+<DELTA Variable="COR_RACA" AttributeName="USE" AttributeValue="Y"/>
+<DELTA Variable="COR_RACA" AttributeName="METHOD" AttributeValue="COUNT"/>
+<DELTA Variable="CO_MUNICIPIO_RESIDENCIA" AttributeName="USE" AttributeValue="N"/>
+<DELTA Variable="LATITUDE" AttributeName="USE" AttributeValue="N"/>
+<DELTA Variable="LONGITUDE" AttributeName="USE" AttributeValue="N"/>
+<DELTA Variable="NOTA_MEDIA" AttributeName="USE" AttributeValue="N"/>
+<DELTA Variable="NO_MUNICIPIO_RESIDENCIA" AttributeName="USE" AttributeValue="N"/>
+<DELTA Variable="NU_ANO" AttributeName="USE" AttributeValue="N"/>
+<DELTA Variable="NU_IDADE" AttributeName="USE" AttributeValue="Y"/>
+<DELTA Variable="NU_IDADE" AttributeName="METHOD" AttributeValue="MEDIAN"/>
+<DELTA Variable="NU_INSCRICAO" AttributeName="USE" AttributeValue="N"/>
+<DELTA Variable="NU_NOTA_CH" AttributeName="USE" AttributeValue="Y"/>
+<DELTA Variable="NU_NOTA_CH" AttributeName="METHOD" AttributeValue="DISTRIBUTION"/>
+<DELTA Variable="NU_NOTA_CN" AttributeName="USE" AttributeValue="Y"/>
+<DELTA Variable="NU_NOTA_CN" AttributeName="METHOD" AttributeValue="MEDIAN"/>
+<DELTA Variable="NU_NOTA_LC" AttributeName="USE" AttributeValue="Y"/>
+<DELTA Variable="NU_NOTA_LC" AttributeName="METHOD" AttributeValue="MEAN"/>
+<DELTA Variable="NU_NOTA_MT" AttributeName="USE" AttributeValue="Y"/>
+<DELTA Variable="NU_NOTA_MT" AttributeName="METHOD" AttributeValue="MIN"/>
+<DELTA Variable="NU_NOTA_REDACAO" AttributeName="USE" AttributeValue="Y"/>
+<DELTA Variable="NU_NOTA_REDACAO" AttributeName="METHOD" AttributeValue="MEAN"/>
+<DELTA Variable="Regiao_Nome" AttributeName="USE" AttributeValue="N"/>
+<DELTA Variable="SG_UF_RESIDENCIA" AttributeName="USE" AttributeValue="N"/>
+<DELTA Variable="Sexo" AttributeName="USE" AttributeValue="Y"/>
+<DELTA Variable="Sexo" AttributeName="METHOD" AttributeValue="COUNT"/>
+<DELTA Variable="Tipo_Escola" AttributeName="USE" AttributeValue="Y"/>
+<DELTA Variable="Tipo_Escola" AttributeName="METHOD" AttributeValue="COUNT"/>
+<DELTA Variable="UF_Capital" AttributeName="USE" AttributeValue="N"/>
+<DELTA Variable="UF_Nome" AttributeName="USE" AttributeValue="N"/>
+</EmVariableAttributes>
+<EmTargetAttributes/>
+<EmFileProperties>
+<EMNOTES Type="EXTERNAL" Extension="txt">
+<Data/>
+</EMNOTES>
+</EmFileProperties>
+</PROPERTIES>
+</NODE>
+<NODE CLASS="SASHELP.EMCORE.EXTENSION.CLASS" COMPONENT="Replace" ID="Repl" X="539" Y="371" DESCRIPTION="Replacement Anomalias" DIAGRAMID="_ROOT_" PARENTID="" TOOLTYPE="MODIFY" TOOLPREFIX="Repl">
+<PROPERTIES Location="CATALOG" Catalog="SASHELP.EMMDFY.REPLACE.SOURCE" HideVariable="N" UnknownLevel="NONE" ReplaceMethod="COMPUTED" CalcMethod="STDDEV" MADSCutoff="9.0" SpacingsCutoff="9.0" StddevCutoff="3.0" PercentsCutoff="0.5" CountReport="Y" ForceRun="N" RunAction="Train" Component="Replace" IntervalMethod="NONE" DataNeeded="Y">
+<VariableProperties/>
+<EmVariableAttributes>
+<DELTA Variable="CO_MUNICIPIO_RESIDENCIA" AttributeName="USE" AttributeValue="N"/>
+<DELTA Variable="IMP_NU_IDADE" AttributeName="USE" AttributeValue="N"/>
+<DELTA Variable="IMP_NU_NOTA_CH" AttributeName="USE" AttributeValue="N"/>
+<DELTA Variable="IMP_NU_NOTA_CN" AttributeName="USE" AttributeValue="N"/>
+<DELTA Variable="IMP_NU_NOTA_LC" AttributeName="USE" AttributeValue="Y"/>
+<DELTA Variable="IMP_NU_NOTA_LC" AttributeName="CALCMETHOD" AttributeValue="MANUAL"/>
+<DELTA Variable="IMP_NU_NOTA_LC" AttributeName="INTERVALMIN" AttributeValue="338.96591"/>
+<DELTA Variable="IMP_NU_NOTA_LC" AttributeName="INTERVALMAX" AttributeValue="698.96487"/>
+<DELTA Variable="IMP_NU_NOTA_LC" AttributeName="REPLACEMETHOD" AttributeValue="MANUAL"/>
+<DELTA Variable="IMP_NU_NOTA_LC" AttributeName="REPLACEMIN" AttributeValue="338.96591"/>
+<DELTA Variable="IMP_NU_NOTA_LC" AttributeName="REPLACEMAX" AttributeValue="698.96487"/>
+<DELTA Variable="IMP_NU_NOTA_MT" AttributeName="USE" AttributeValue="N"/>
+<DELTA Variable="IMP_NU_NOTA_REDACAO" AttributeName="USE" AttributeValue="Y"/>
+<DELTA Variable="IMP_NU_NOTA_REDACAO" AttributeName="CALCMETHOD" AttributeValue="STDDEV"/>
+<DELTA Variable="LATITUDE" AttributeName="USE" AttributeValue="N"/>
+<DELTA Variable="LONGITUDE" AttributeName="USE" AttributeValue="N"/>
+<DELTA Variable="NOTA_MEDIA" AttributeName="USE" AttributeValue="Y"/>
+<DELTA Variable="NOTA_MEDIA" AttributeName="CALCMETHOD" AttributeValue="MANUAL"/>
+<DELTA Variable="NOTA_MEDIA" AttributeName="INTERVALMIN" AttributeValue="377.988725"/>
+<DELTA Variable="NOTA_MEDIA" AttributeName="INTERVALMAX" AttributeValue="860.638125"/>
+<DELTA Variable="NOTA_MEDIA" AttributeName="REPLACEMETHOD" AttributeValue="MANUAL"/>
+<DELTA Variable="NOTA_MEDIA" AttributeName="REPLACEMIN" AttributeValue="377.988725"/>
+<DELTA Variable="NOTA_MEDIA" AttributeName="REPLACEMAX" AttributeValue="860.638125"/>
+<DELTA Variable="NU_ANO" AttributeName="USE" AttributeValue="N"/>
+<DELTA Variable="NU_INSCRICAO" AttributeName="USE" AttributeValue="N"/>
+</EmVariableAttributes>
+<EmTargetAttributes/>
+<EmFileProperties>
+<USERTRAINCODE Type="EXTERNAL" Extension="sas">
+<Data/>
+</USERTRAINCODE>
+<NEWVALUES Type="DATA">
+<Data>
+<Obs NAME="IMP_COR_RACA" LEVEL="_UNKNOWN_" TYPE="C" REPLACE_VALUE="_DEFAULT_"/>
+<Obs NAME="IMP_Sexo" LEVEL="_UNKNOWN_" TYPE="C" REPLACE_VALUE="_DEFAULT_"/>
+<Obs NAME="IMP_Tipo_Escola" LEVEL="_UNKNOWN_" TYPE="C" REPLACE_VALUE="_DEFAULT_"/>
+</Data>
+<Metadata>
+<Variable NAME="Name" LABEL="Variable" LENGTH="32" FORMAT="" TYPE="C"/>
+<Variable NAME="LEVEL" LABEL="Formatted Value" LENGTH="14" FORMAT="" TYPE="C"/>
+<Variable NAME="TYPE" LABEL="Type" LENGTH="1" FORMAT="" TYPE="C"/>
+<Variable NAME="REPLACE_VALUE" LABEL="Replacement Value" LENGTH="200" FORMAT="" TYPE="C"/>
+</Metadata>
+</NEWVALUES>
+<EMNOTES Type="EXTERNAL" Extension="txt">
+<Data/>
+</EMNOTES>
+</EmFileProperties>
+</PROPERTIES>
+</NODE>
+<NODE CLASS="SASHELP.EMEXPL.STATEXPLORE.CLASS" COMPONENT="StatExplore" ID="Stat" X="344" Y="130" DESCRIPTION="Análise Exploratória" DIAGRAMID="_ROOT_" PARENTID="" TOOLTYPE="EXPLORE" TOOLPREFIX="Stat">
+<PROPERTIES BySegment="N" Correlation="Y" Spearman="N" Pearson="Y" ChiSquare="Y" ChiSquareInterval="N" ChiSquareIntervalNBins="5" MaximumVars="1000" HideVariable="Y" DropRejected="Y" UseValidate="N" UseTest="N" UseScore="N" NObs="ALL" IntervalDistribution="Y" ClassDistribution="Y" LevelSummary="Y" ForceRun="N" RunAction="Train" Component="StatExplore">
+<VariableProperties/>
+<EmVariableAttributes/>
+<EmTargetAttributes/>
+<EmFileProperties>
+<CROSSTAB Type="DATA">
+<Data/>
+<Metadata/>
+</CROSSTAB>
+<EMNOTES Type="EXTERNAL" Extension="txt">
+<Data/>
+</EMNOTES>
+</EmFileProperties>
+</PROPERTIES>
+</NODE>
+<NODE CLASS="SASHELP.EMEXPL.STATEXPLORE.CLASS" COMPONENT="StatExplore" ID="Stat2" X="732" Y="373" DESCRIPTION="Análise da base corrigida" DIAGRAMID="_ROOT_" PARENTID="" TOOLTYPE="EXPLORE" TOOLPREFIX="Stat">
+<PROPERTIES BySegment="N" Correlation="Y" Spearman="N" Pearson="Y" ChiSquare="Y" ChiSquareInterval="N" ChiSquareIntervalNBins="5" MaximumVars="1000" HideVariable="Y" DropRejected="Y" UseValidate="N" UseTest="N" UseScore="N" NObs="100000" IntervalDistribution="Y" ClassDistribution="Y" LevelSummary="Y" ForceRun="N" RunAction="Train" Component="StatExplore">
+<VariableProperties/>
+<EmVariableAttributes/>
+<EmTargetAttributes/>
+<EmFileProperties>
+<CROSSTAB Type="DATA">
+<Data/>
+<Metadata/>
+</CROSSTAB>
+<EMNOTES Type="EXTERNAL" Extension="txt">
+<Data/>
+</EMNOTES>
+</EmFileProperties>
+</PROPERTIES>
+</NODE>
+</NODES>
+<CONNECTIONS>
+<CONNECTION FROM="FIMPORT" TO="Impt"/>
+<CONNECTION FROM="FIMPORT" TO="Stat"/>
+<CONNECTION FROM="Impt" TO="Repl"/>
+<CONNECTION FROM="Repl" TO="Stat2"/>
+</CONNECTIONS>
+<NOTES>
+<DATA><![CDATA[
+
+]]>
+</DATA>
+</NOTES>
+</Workspace>
+</_ROOT_>
